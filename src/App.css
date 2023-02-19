@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+button {
+  padding: 10px 10px;
+  color: black;
+  background-color: #648ad5;
+  border-radius: 10px;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +25,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0d5dfd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,6 +43,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
