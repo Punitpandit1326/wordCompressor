@@ -15,7 +15,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import React from 'react';
 
 
-
 function App() {
   const [mode, setMode] = useState('light');
   const [alert, setAlert] = useState(null);
