@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 
@@ -6,7 +6,7 @@ import TextForm from './components/TextForm';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
 import About from './components/About';
-import { BrowserRouter, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
@@ -41,6 +41,7 @@ function App() {
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("  Light mode has been enabled", "success");
+      document.title = 'React js-Word Counter';
     }
   }
   return (
@@ -50,10 +51,10 @@ function App() {
         <Alert alert={alert} />
         <div className="container my=5">
           <Routes>
-            <Route path='/' element={<TextForm showAlert={showAlert} heading="Enter Your Details Here" mode={mode} />} />
+            <Route path='/' element={<TextForm showAlert={showAlert} heading="Try React js- Word Counter,Text Bold,Converted To Uppercase or Lowercase" mode={mode} />} />
 
 
-            <Route path='/about' element={<About />} />
+            <Route path='/about' element={<About mode={mode} />} />
 
 
 
@@ -61,7 +62,6 @@ function App() {
 
 
         </div>
-
       </BrowserRouter>
 
     </>
